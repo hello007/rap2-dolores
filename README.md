@@ -1,3 +1,20 @@
+# 搭建生产版本及运行过程
+## 配置文件
+修改 /src/config/config.***.js中连接的服务端ip即可。
+## 打包&部署&运行
+### 打包
+// 编译React生产包
+> npm run build  
+
+## 部署
+将build文件夹整体部署到服务器环境（ftp等）
+
+## 运行
+> serve -s ./build -p 18880 &
+
+其中-p后的参数为浏览器访问的端口
+
+
 # RAP2-DOLORES CE version (front-end static build)
 
 [![Build Status](https://travis-ci.org/thx/rap2-dolores.svg?branch=master)](https://travis-ci.org/thx/rap2-dolores)
